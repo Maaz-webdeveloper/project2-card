@@ -1,0 +1,37 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+html, body{
+    height: 100%;
+    width: 100%;
+}
+#container{
+    height: 400px;
+    width: 350px;
+    background-color: white;
+    border-radius: 10px;
+    position: relative;
+}
+body{
+    background-color: lightseagreen;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#container img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position:top ;
+}
+#container i{
+    color: #fff;
+    font-size: 78px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    opacity: 0;
+    transition: transform ease 0.5s;
+}
